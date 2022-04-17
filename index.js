@@ -42,7 +42,7 @@ setInterval(() => {
     }
 
     const d = new Date();
-    bot.telegram.sendMessage('-1001621332233', `[${d.toDateString() + ' ' + d.toLocaleTimeString()}]\n\Device update\n\n${text}\n\n🔃 - Pending\n🟢 - Online\n🔴 - Offline`);
+    bot.telegram.sendMessage('-1001621332233', `[${d.toDateString() + ' ' + d.toTimeString()}]\n\Device update\n\n${text}\n\n🔃 - Pending\n🟢 - Online\n🔴 - Offline`);
 }, 1 * 60 * 60 * 1000);
 
 const parseData = (payload) => {
